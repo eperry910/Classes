@@ -6,7 +6,6 @@
 /home/edwinp/Documents/Classes/Personal Test/Physics/bin/Debug/net7.0/Physics.runtimeconfig.json
 /home/edwinp/Documents/Classes/Personal Test/Physics/bin/Debug/net7.0/Physics.dll
 /home/edwinp/Documents/Classes/Personal Test/Physics/bin/Debug/net7.0/Physics.pdb
-/home/edwinp/Documents/Classes/Personal Test/Physics/obj/Debug/net7.0/Physics.csproj.AssemblyReference.cache
 /home/edwinp/Documents/Classes/Personal Test/Physics/obj/Debug/net7.0/Physics.GeneratedMSBuildEditorConfig.editorconfig
 /home/edwinp/Documents/Classes/Personal Test/Physics/obj/Debug/net7.0/Physics.AssemblyInfoInputs.cache
 /home/edwinp/Documents/Classes/Personal Test/Physics/obj/Debug/net7.0/Physics.AssemblyInfo.cs

@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="logo">D&D Character Forge</div>
+            <div className="logo">Adventurer's Archive</div>
             <ul className="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Create New Character</a></li>

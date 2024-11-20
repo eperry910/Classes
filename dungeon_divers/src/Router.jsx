@@ -1,20 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
 import BuildScreen from './components/BuildScreen';
-import Navbar from './components/Navbar';
-import LandingPage from './components/LandingPage';
 
 function Routing() {
   return (
-    <>
-    <Navbar/>
     <Router>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<Home />} />
         <Route path="/CharacterCreator" element={< BuildScreen/>} />
       </Routes>
     </Router>
-    </>
   );
 }
 

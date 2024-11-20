@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "./LandingPage.css";
+import "./BuildScreen.css";
 
 function BuildScreen() {
   // State variables to hold form dataLandingPage';
@@ -36,8 +36,6 @@ function BuildScreen() {
           onChange={handleChange}
           required
         />
-      </div>
-      <div>
         <label htmlFor="Class">Email:</label>
         <input
           type="text"

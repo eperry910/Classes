@@ -25,7 +25,7 @@ function BuildScreen() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form id="characterCreator" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="Character Name">Name:</label>
         <input

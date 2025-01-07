@@ -7,8 +7,9 @@ const Navbar = () => {
             <div className="logo">Adventurer's Archive</div>
             <ul className="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#features">Create New Character</a></li>
-                <li className='expanding-menu'><a href="#about">Character Details</a>
+                <li><a href="features">Create New Character</a></li>
+                <li><a href="Character">Create New Character</a></li>
+                <li className='expanding-menu'><a href="#about">View Character</a>
                     <ul className="submenu">
                         <li>Classes</li>
                         <li>Races</li>

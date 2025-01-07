@@ -1,0 +1,36 @@
+.character-sheet {
+  font-family: 'Garamond', serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.character-sheet h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.character-sheet p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.character-sheet p strong {
+  display: inline-block;
+  width: 120px;
+}
+
+.character-sheet p::before {
+  content: '• ';
+  color: #000;
+}
+
+.character-sheet p:last-child {
+  margin-bottom: 0;
+}

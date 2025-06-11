@@ -22,15 +22,26 @@ function BuildScreen() {
       try {
         const racesResponse = await fetch('https://adventurearchive-acc7c3d2apacgxg6.canadacentral-01.azurewebsites.net/OverallClasses');
         const classesResponse = await fetch('https://adventurearchive-acc7c3d2apacgxg6.canadacentral-01.azurewebsites.net/OverallClasses');
-        const backgroundsResponse = await fetch('/api/backgrounds');
+        const backgroundsResponse = await fetch('https://adventurearchive-acc7c3d2apacgxg6.canadacentral-01.azurewebsites.net/OverallClasses');
 
-        const races = await racesResponse.json(); // Expecting an array of JSON objects
-        const classes = await classesResponse.json(); // Expecting an array of JSON objects
-        const backgrounds = await backgroundsResponse.json(); // Expecting an array of JSON objects
+        // Log raw responses for debugging
+        console.log('Raw Races Response:', racesResponse);
+        console.log('Raw Classes Response:', classesResponse);
+        console.log('Raw Backgrounds Response:', backgroundsResponse);
 
-        console.log('Races:', races);
-        console.log('Classes:', classes);
-        console.log('Backgrounds:', backgrounds);
+        // Check if responses are OK (status 200-299)
+        if (!racesResponse.ok || !classesResponse.ok || !backgroundsResponse.ok) {
+          throw new Error('One or more API responses returned an error status.');
+        }
+
+        // Parse JSON responses
+        const races = await racesResponse.json();
+        const classes = await classesResponse.json();
+        const backgrounds = await backgroundsResponse.json();
+
+        console.log('Parsed Races:', races);
+        console.log('Parsed Classes:', classes);
+        console.log('Parsed Backgrounds:', backgrounds);
 
         setOptions({
           races: races.map((race) => ({ id: race._id, name: race.name })),

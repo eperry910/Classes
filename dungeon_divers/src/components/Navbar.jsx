@@ -6,14 +6,18 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="logo">Adventurer's Archive</div>
             <ul className="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="features">Create New Character</a></li>
-                <li><a href="Character">Create New Character</a></li>
-                <li className='expanding-menu'><a href="#about">View Character</a>
-                    <ul className="submenu">
-                        <li>Classes</li>
-                        <li>Races</li>
-                    </ul></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/CharacterCreator">Create New Character</a></li>
+                <li><a href="/Characters">View Characters</a></li>
+                <li className="expanding-menu">
+                    <a href="#about">Learn More About 5e</a>
+                    <div className="submenu-box">
+                        <ul className="submenu">
+                            <li>Classes</li>
+                            <li>Races</li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
     );

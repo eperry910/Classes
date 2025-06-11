@@ -4,8 +4,12 @@
     color: #f8f3e4;
     padding: 1rem 2rem;
     display: flex;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -33,10 +37,38 @@
     color: #ffb400;
 }
 
-.submenu {
-    display: none;
+.expanding-menu {
+    position: relative;
 }
 
-.expanding-menu:hover .submenu {
+.submenu-box {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Position below the parent menu item */
+    left: 0;
+    background-color: gray;
+    opacity: 90%;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.submenu li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.submenu li:hover {
+    background-color: #f0f0f0;
+}
+
+.expanding-menu:hover .submenu-box {
     display: block;
 }
